@@ -1,0 +1,97 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:400,500&display=swap');
+
+// Bootstrap
+@import '~materialize-css/dist/css/materialize.min';
+
+html{
+	font-family: 'Darker Grotesque', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	z-index: 99;
+}
+// Fonts
+.bold{
+	font-weight: 500;
+}
+// Backgrounds
+.hero{
+	background: url('/img/hero.jpg') no-repeat bottom center;
+	background-size: cover;
+	height: 90vh;
+	width: 100vw;
+}
+.opacity{
+	background: rgba(0,0,0,.5);
+}
+// Colors
+.green{
+	background: #80bc00 !important;
+}
+.green-text{
+	color:#80bc00 !important;
+}
+/* label underline focus color */
+.input-field input[type=text],
+.input-field input[type=email],
+.input-field input[type=password] {
+ border-bottom: .5px solid #80bc00 !important;
+}
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+ border-bottom: 1px solid #80bc00 !important;
+ box-shadow: 0 1px 0 0 #80bc00 !important;
+}
+// Helpers
+.form{
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	width: 70%;
+}
+.overflow{
+	overflow-y: hidden;
+}
+p a{
+	margin-right: 10px;
+}
+.valign-wrapper{
+	height: 100vh;
+}
+.admin{
+	position: fixed;
+	bottom: 10%;
+	right: 1%;
+}
+.dashboard{
+	padding-left: 300px;
+}
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #80bc00;
+}
+// Medias
+@media screen and (max-width: 600px) {
+	.rs{
+		text-align: center !important;
+	}
+}
+@media only screen and (max-width : 992px) {
+      .dashboard {
+        padding-left: 0;
+      }
+    }
